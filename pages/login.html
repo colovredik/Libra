@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Libra</title>
 </head>
 <body>
-    <h1>Привет мир!!</h1>
+    <div>
+        <form>
+            <h1 id="titleLogin">Авторизация</h1>
+            <label hidden for="email">Email</label>
+            <input class="input" id="email" type="email" placeholder="Введите адрес электронной почты">
+            <label hidden for="password">Password</label>
+            <input class="input" id="password" type="password" placeholder="Введите пароль">
+            <button id="enter">Войти</button>
+            <a id="registration" href="">Регистрация</a>
+        </form>
+    </div>
 </body>
 </html>
