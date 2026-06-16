@@ -2,9 +2,50 @@
 
 body {
     font-family:"Oswald", sans-serif;
+    margin: 0;
+}
+main {
+  margin-top: 150px; /* topak + menu */
 }
 
-div {
+.hero {
+      background-image: url('../img/paper.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.heroLog {
+      background-image: url('../img/paper.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.heroLog2 {
+    background-image: url('../img/paper.png');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+div.login {
     display: flex;
     justify-content: center; /* Центрирование по горизонтали */
     align-items: center;
@@ -12,43 +53,532 @@ div {
     min-height: 100vh;       /* Занимает всю высоту viewport */
  margin: 0;
     }
-form {
-    height: 629px;
-    width: 1082px;
+.formlog {
+    height: 70%;
+    width: 70%;
     padding: 20px;
     border-radius: 38px;
     border: 1px solid rgba(89, 73, 73, 1);
-    background-color: FFFFF;
+    background-color: white;
 }
 
 .input {
     display: block;
-    width: 711px;
-    height: 56px;
+    width: 60%;
+    height: 60%;
     border-radius: 38px;
-    margin-top: 63px;
-    margin-bottom: 63px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
     font-size: 25px;
+    background-color: #B99274;
+    color: white;
+}
+.input::placeholder{
+     color: white;
+    opacity: 1;
 }
 
 #titleLogin {
     font-size: 40px;
+    color:#594949;
 }
 
 #enter {
     display: block;
-    width: 237px;
-    height: 83px;
+    width: 30%;
+    height: 50%;
     border-radius: 38px;
     font-size: 40px;
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    background-color: #B99274;
+    color: white;
 }
 
 #registration {
     font-size: 20px;
+    color: #594949;
+}
+
+#akk {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(89, 73, 73, 1);
+}
+
+
+#topak {
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;          /* Прижать к верхней границе */
+    left: 0;         /* От левого края */
+    width: 100%;     /* Растянуть на всю ширину */
+    padding: 15px;
+    z-index: 1000;
+    background-color:rgba(217, 217, 217, 1);
+    text-align: right;
+
+}
+
+#akk {
+    padding-right: 20px;
+}
+
+#logo 
+{
+    width: 150px;
+}
+
+#menu {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;     /* Растянуть на всю ширину */
+    height: 105px;
+    margin-top: 50px;
+     background-color:rgba(185, 146, 116, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ulmenu {
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+  margin-right: 10%;
+  flex: 1;
+}
+
+.ulmenu a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+#main{
+    font-weight: bold;
+}
+
+.limenu:hover 
+{
+    font-weight: bold;
+}
+
+#main {
+    font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: 50px;
+    max-width: 600px;   /* ширина поля */
+    padding: 20px;
+    border-radius: 38px;
+    border: 1px solid rgba(89, 73, 73, 1);
+    background-color: FFFFF;
+    margin: 20% auto 1% auto;
+    max-width: 1100px;
+
+}
+
+.search {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 20px;
+  
+  
+}
+
+.search-body input {
+  width: 100%;
+  border-radius: 20px;
+  height: 50px;
+}
+
+.search-body{
+    margin: 0 auto;;
+}
+
+.butfil {
+    background: none; /* Убираем фон */
+    border: none;     /* Убираем рамку */
+    padding: 0;       /* Убираем отступы */
+    color: rgba(89, 73, 73, 1);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.books-container {
+    display: flex;           /* Располагаем книги в ряд */
+    flex-wrap: wrap;         /* Перенос на следующую строку при необходимости */
+    gap: 20px;               /* Расстояние между книгами */
+    padding: 20px;
+    justify-content: center; /* Центрируем книги по ширине */
+}
+
+.book-card {
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.book-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Чтобы картинка не растягивалась */
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 16px;
+    margin: 10px 0 5px 0;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.read-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #c13f3f;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #993030;
+}
+
+.nameweb{
+    color: white;
+    margin-left: 2.5%;
+}
+
+.droplist{
+    border-radius: 10%;
+    background-color: #B99274;
+    color: white;
+    font-weight: bold;
+    overflow-y: scroll
+}
+
+.searchlist {
+    border-radius: 10%;
+    color: white;
+    background-color:#B99274 ;
+}
+
+.searchB {
+    border-radius: 10%;
+    color: white;
+    background-color:#B99274 ;
+    width: 10%;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#searchBth {
+    border-radius: 15%;
+    width: 10%;
+    height: 30px;
+    margin-top: 2%;
+    background-color: #B99274;
+    color: white;
+    font-weight: bold;
+}
+
+#suggestions {
+    display: none;
+    background-color: white;
+    overflow-y: auto;
+    border-radius: 20px;
+    width: 65%;
+    max-height: 200px;
+    border: 2px solid #594949;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+.suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover {
+    background-color: #f0e6dd;   /* светлый бежевый при наведении */
+}
+
+.active-filter {
+    border-color: #ccc;
+    background-color: #7d5f49;
+    color: white;
+}
+
+.modal-overlay {
+    display: none;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;     
+  height: 100vh;   
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1000;
+}
+
+.modal-card {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255); 
+    border-radius: 20px;
+    border: 2px solid #594949;
+    padding: 30px;
+    max-width: 700px;
+}
+
+.modal-cover {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.modal-info{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.modal-close {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+}
+
+.my-books-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    max-width: 1100px;
+     margin: 0 auto;         /* центрирование */
+    padding: 20px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.parent-upload {
+    display: flex;          /* Включаем Flexbox */
+  justify-content: center;/* Центрируем по горизонтали */
+  align-items: center;    /* Центрируем по вертикали */
+  border: 1px solid #594949;
+   width: 100%; 
+   max-width: 300px;
+    border-radius: 38px;
+    height: 70px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0, -1, 1, 0.2);
+}
+
+.upload-sidebar {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+    background-color: #B99274;
+    color: #594949;
+    text-align: center;
+    width: 60%;
+    height: 60%;
+}
+
+.upload-modal-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #594949;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.upload-modal-card input,
+.upload-modal-card textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.modal-fav {
+    color: #7a7a7a;
+    float: right;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 120%;
+}
+
+.modal-fav:hover  {
+    color: #993030;
+}
+
+.active-fav{
+    color: #993030;
+}
+
+#img-head {
+    display: block;
+    width: 60%;
+    margin: 180px auto 0;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .ulmenu {
+        display: none;           /* скрыть меню по умолчанию */
+        flex-direction: column;  /* пункты вертикально */
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(185, 146, 116, 1);
+    }
+    
+    .ulmenu.show {
+        display: flex;           /* показать при клике */
+    }
+    
+    .burger {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    #logo {
+        width: 100px;            /* уменьшить логотип */
+    }
+    
+    #img-head {
+        width: 90%;              /* шире на мобильном */
+        margin-top: 180px;
+    }
+    
+    .book-card {
+        width: 130px;            /* меньше карточки */
+    }
+
+    #logo {
+        display: block;
+        margin-left: 38.5%;
+        margin-right: auto;
+    }
+
+    .filters {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.searchB {
+    width: 30%;
+    font-size: 14px;
+}
+
+.droplist {
+    font-size: 12px;
+}
+
+    .my-books-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .parent-upload {
+        max-width: 100%;
+    }
+    
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+.nameweb {
+    font-size: 14px;
+    margin-left: 5px;
+    display: block;
+}
+
+    .my-books-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .parent-upload {
+        order: 1;
+    }
+    
+    .books-grid {
+        order: 2;
+    }
+
+    .nameweb {
+    font-size: 30px;
+    margin-left: 5px;
+    display: block;
+}
+
 }

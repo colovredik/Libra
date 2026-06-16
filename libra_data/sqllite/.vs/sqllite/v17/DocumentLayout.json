@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Documents\\libra data\\sqllite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C50E64-7EA6-449B-B0B9-E3AA11017B49}|sqllite\\sqllite.vcxproj|C:\\Users\\user\\Documents\\libra data\\sqllite\\sqllite\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E3C50E64-7EA6-449B-B0B9-E3AA11017B49}|sqllite\\sqllite.vcxproj|solutionrelative:sqllite\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileName.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Documents\\libra data\\sqllite\\sqllite\\FileName.cpp",
+              "RelativeDocumentMoniker": "sqllite\\FileName.cpp",
+              "ToolTip": "C:\\Users\\user\\Documents\\libra data\\sqllite\\sqllite\\FileName.cpp",
+              "RelativeToolTip": "sqllite\\FileName.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-05T15:37:02.187Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

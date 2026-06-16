@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/лого.png" type="image/png">
+    <title>Libra - Регистрация</title>
+</head>
+<body>
+    <div class="heroLog"></div>
+    <div class="login">
+        <form class="formlog" action="/register" method="POST">
+            <h1 id="titleLogin">Регистрация</h1>
+            <label hidden for="email">Логин</label>
+            <input class="input" id="username" name="username" type="text" placeholder=" ✉ Введите логин" autocomplete="off">
+            <label hidden for="password">Password</label>
+            <input class="input" id="password"  name="password" type="password" placeholder="Введите пароль">
+            <p id="errorMsg" style="color: red;"></p>
+            <button id="enter">Создать</button>
+            <a id="registration" href="login.html">Войти в аккаунт</a>
+        </form>
+    </div>
+    <div class="heroLog2"></div>
+    <script src="../scripts/register.js"></script>
+</body>
+</html>

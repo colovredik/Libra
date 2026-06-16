@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon" href="../img/лого.png" type="image/png">
+    <title>Libra - Избранное</title>
+</head>
+<body>
+    <header>
+        <div id="topak">  
+            <a id="akk" href="login.html">Войти</a>
+        </div>
+        <div id="menu">
+            <button class="burger" id="burger">&#9776;</button>
+            <h2 class="nameweb">ИЗБРАННОЕ</h2>
+            <img src="../img/лого.png" alt="логотип" id="logo">
+               <ul class="ulmenu">
+                    <li class="limenu">
+                         <a href="index.html">Главная</a>
+                     </li>
+                     <li class="limenu">
+                          <a href="catalog.html">Найти книгу</a>
+                     </li>
+                     <li class="limenu">
+                         <a href="favorites.html"><b>Избранное</b></a>
+                     </li>
+                     <li class="limenu">
+                         <a href="my-books.html">Мои книги</a>
+                     </li>
+             </ul>
+        </div>
+    </header>
+    <main>
+         <div class="books-container" id="booksContainer">
+    </div>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img id="modalImage" src="" alt="" class="modal-cover">
+        <div class="modal-info">
+        <h2 id="modalTitle"></h2>
+        <p id="modalAuthor"></p>
+        <p id="modalYear"></p>
+        <p id="modalPages"></p>
+        <p id="modalDescription"></p>
+        <button  class="modal-fav" id="modal-fav"><span>&#10084;</span></button>
+    </div>
+    </div>
+</div>
+<script src="../scripts/favorites.js"></script>
+<script src="../scripts/modal.js"></script>
+<script src="/scripts/auth-check.js"></script>
+
+    </main>
+</body>
+</html>

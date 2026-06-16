@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/main.css">
-    <title>Libra</title>
+    <link rel="icon" href="../img/лого.png" type="image/png">
+    <title>Libra - Вход в аккаунт</title>
 </head>
 <body>
-    <div>
-        <form>
+    <div class="heroLog"></div>
+    <div class="login">
+        <form class="formlog" action="/login" method="POST">
             <h1 id="titleLogin">Авторизация</h1>
-            <label hidden for="email">Email</label>
-            <input class="input" id="email" type="email" placeholder="Введите адрес электронной почты">
+            <label hidden for="email">Логин</label>
+            <input class="input" id="username" name="username" type="text" placeholder=" ✉ Введите логин" autocomplete="off">
             <label hidden for="password">Password</label>
-            <input class="input" id="password" type="password" placeholder="Введите пароль">
+            <input class="input" name="password" id="password" type="password" placeholder="Введите пароль">
+             <p id="errorMsg" style="color: red;"></p>
             <button id="enter">Войти</button>
-            <a id="registration" href="">Регистрация</a>
+            <a id="registration" href="register.html">Регистрация</a>
         </form>
     </div>
+     <div class="heroLog2"></div>
+    <script src="/scripts/login.js"></script>
 </body>
 </html>
