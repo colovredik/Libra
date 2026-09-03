@@ -15,6 +15,9 @@
 HTML, CSS, JavaScript, Node.js, Express, SQLite
 
 ## Запуск
+1. Установите Node.js с nodejs.org
+2. Склонируйте репозиторий:
+
 git clone https://github.com/colovredik/libra
 cd libra
 npm install
