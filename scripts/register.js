@@ -12,7 +12,7 @@ formlog.addEventListener("submit", function(event){
         .then(result => {
         console.log(result)
          if(result.message){
-            window.location.href = "/pages/login.html";
+            window.location.href = "/pages/index.html";
         }
         else{
             errorMsg.innerHTML = "";

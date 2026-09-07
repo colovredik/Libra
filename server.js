@@ -53,6 +53,7 @@ app.post("/register", async (req,res) => {
 
     db.run("INSERT INTO users (username, password) VALUES (?, ?)", [username, hashedPassword], function(err){
         if (err){
+            console.log("Ошибка регистрации:", err.message);
             res.status(400).json({error: "Пользователь уже существует"});
             return;
         }

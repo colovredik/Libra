@@ -19,8 +19,11 @@ HTML, CSS, JavaScript, Node.js, Express, SQLite
 2. Склонируйте репозиторий:
 
 git clone https://github.com/colovredik/libra
+
 cd libra
+
 npm install
+
 node server.js
 
 Сайт: http://localhost:3000
