@@ -79,6 +79,7 @@ node server.js
 
 ## Структура проекта
 
+```
 libra/
 ├── pages/          # HTML-страницы
 ├── scripts/        # Клиентский JavaScript
@@ -88,6 +89,7 @@ libra/
 ├── server.js       # Серверная часть (Express)
 ├── package.json    # Зависимости
 └── .env.example    # Образец переменных окружения
+```
 
 ## Скриншоты
 
