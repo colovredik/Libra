@@ -1,9 +1,11 @@
+require('dotenv').config();
+const morgan = require('morgan');
 const bcrypt = require("bcryptjs");
 
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
-
 const app = express();
+app.use(morgan('dev'));
 const session = require("express-session");
 const multer = require("multer");
 const db = new sqlite3.Database("./libra_data/libradata.db");
@@ -53,6 +55,7 @@ app.post("/register", async (req,res) => {
 
     db.run("INSERT INTO users (username, password) VALUES (?, ?)", [username, hashedPassword], function(err){
         if (err){
+            console.log("Ошибка регистрации:", err.message);
             res.status(400).json({error: "Пользователь уже существует"});
             return;
         }
@@ -208,6 +211,6 @@ app.post("/upload", upload.fields([{name: "cover"}, {name: "pdf"}]), (req, res) 
 app.use("/uploads", express.static("uploads"));
 
 app.use(express.static("."));
-app.listen(3000, () => {
-    console.log("Server started");
+app.listen(process.env.PORT, () => {
+    console.log(`Server started on port: ${process.env.PORT}`);
 });

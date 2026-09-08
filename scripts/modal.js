@@ -83,6 +83,5 @@ fav.addEventListener("click", function(){
         }
     })}
     
-
 }
     
