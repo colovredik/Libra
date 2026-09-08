@@ -88,3 +88,9 @@ libra/
 ├── server.js       # Серверная часть (Express)
 ├── package.json    # Зависимости
 └── .env.example    # Образец переменных окружения
+
+## Скриншоты
+
+| Главная | Книга | Библиотека |
+|---------|-------|------------|
+| ![Главная](screenshots/main.png) | ![Книга](screenshots/modal.png) | ![Поисковик](screenshots/search.png) |
